@@ -82,10 +82,10 @@ int main()
 
 
     //ejercicio 5
-//    int numero, divisores=0,i;
+//    int numero, divisores=0;
 //    cout<<"ingrese numero: ";
 //    cin>>numero;
-//    for(i=1;i<(numero+1);i=i+1){
+//    for(int i=1;i<(numero+1);i=i+1){
 //        if ((numero%i)==0){
 //            divisores=divisores+1;
 //        }
@@ -95,6 +95,25 @@ int main()
 //    }
 //    else
 //        cout<< "es primo";
+	
+	
+	//ejercicio 6
+	int numero,primo, divisores=0,j=2;
+	cout<<"ingrese numero: ";
+	cin>>numero;
+	while(j<numero){
+		for(int i=1;i<(j+1);i=i+1){
+			if ((j%i)==0){
+				divisores=divisores+1;
+			}
+			primo=i;
+		}
+		if(divisores==2){
+			cout<<primo<<",";
+		}
+		j++;
+		divisores=0;
+	}
 
 
     //ejercicio 9
@@ -111,21 +130,21 @@ int main()
 
 
     //ejercicio EXTRA
-    int i,fact=1,numero;
-    cout<<"ingresa un numero: ";
-    cin>>numero;
-    if(numero<0){
-        fact =0;
-    }
-    else if(numero==0){
-            fact=1;
-    }
-    else{
-      for (i = 1; i <= numero; i++){
-         fact = fact*i;
-      }
-    }
-    cout<<"Factorial de "<<numero<<" es: "<<fact<<endl;
+//    int i,fact=1,numero;
+//    cout<<"ingresa un numero: ";
+//    cin>>numero;
+//    if(numero<0){
+//        fact =0;
+//    }
+//    else if(numero==0){
+//            fact=1;
+//    }
+//    else{
+//      for (i = 1; i <= numero; i++){
+//         fact = fact*i;
+//      }
+//    }
+//    cout<<"Factorial de "<<numero<<" es: "<<fact<<endl;
 
     return 0;
 }

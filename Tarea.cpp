@@ -115,7 +115,38 @@ int main()
 		divisores=0;
 	}
 
-
+	
+	//ejercicio 7
+//	int a,d,b=10000,res;
+//	cout<<"Ingrese un numero de 5 digitos: "<<endl;
+//	cin>>a;
+//	while(b>=0){
+//		d=a/b;
+//		cout<<d<<"  ";
+//		a=a%b;
+//		b=b/10;		
+//	}
+	
+	
+	//ejercicio 8
+//	int n, numero, digitos, reverso = 0;
+//	cout << "ingrese un numero: ";
+//	cin >> numero;	
+//	n = numero;
+//	
+//	do
+//	{
+//		digitos = numero % 10;
+//		reverso = (reverso * 10) + digitos;
+//		numero = numero / 10;
+//	} while (numero != 0);	
+//	cout << " el numero alreves es : " << reverso << endl;	
+//	if (n == reverso)
+//		cout << " el numero es palindromo";
+//	else
+//		cout << " el numero no es palindromo";
+	
+		
     //ejercicio 9
 //    int anio;
 //    cout<<"ingrese un anio:";

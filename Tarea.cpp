@@ -97,23 +97,23 @@ int main()
 //        cout<< "es primo";
 	
 	
-	//ejercicio 6
-	int numero,primo, divisores=0,j=2;
-	cout<<"ingrese numero: ";
-	cin>>numero;
-	while(j<numero){
-		for(int i=1;i<(j+1);i=i+1){
-			if ((j%i)==0){
-				divisores=divisores+1;
-			}
-			primo=i;
-		}
-		if(divisores==2){
-			cout<<primo<<",";
-		}
-		j++;
-		divisores=0;
-	}
+//	//ejercicio 6
+//	int numero,primo, divisores=0,j=2;
+//	cout<<"ingrese numero: ";
+//	cin>>numero;
+//	while(j<numero){
+//		for(int i=1;i<(j+1);i=i+1){
+//			if ((j%i)==0){
+//				divisores=divisores+1;
+//			}
+//			primo=i;
+//		}
+//		if(divisores==2){
+//			cout<<primo<<",";
+//		}
+//		j++;
+//		divisores=0;
+//	}
 
 	
 	//ejercicio 7
@@ -158,7 +158,21 @@ int main()
 //            else
 //                cout<<"El anio " << anio << " ,no es Bisiesto";
 //    }
-
+	
+	
+	//ejercicio 10
+	int x=1 , y=1,z, cantidad,fibo=2;
+	cout << "ingrese un numero: ";
+	cin >> cantidad;
+	cout<<x<<'\t';
+	cout<<y<<'\t';
+	while(fibo < cantidad){
+		z=x+y;
+		cout<<z<<'\t';
+		fibo+=1;
+		x=y;
+		y=z;
+	}
 
     //ejercicio EXTRA
 //    int i,fact=1,numero;

@@ -45,17 +45,11 @@ void evaluar(int x, int y,bool &multiplo2,bool &multiplosi, bool &igualdad2){
 
 // #5
 bool primo(int numero){
-	int divisores=0,i;
-	for(i=1;i<(numero+1);i=i+1){
-		if ((numero%i)==0){
-			divisores=divisores+1;
-		}
+	for(int i=2;i<numero;i++){
+		if (!(numero%i))
+			return false;
 	}
-	if(divisores!=2){
-		return false;
-	}
-	else
-	   return true;
+	return true;
 }
 
 // #6
@@ -238,7 +232,7 @@ if(opcion==5){
 	cout<<"ingrese numero: ";
 	cin>>numero;
 	cout<<'\n';
-	if(primo(numero)==true){
+	if(primo(numero)){
 		cout<<"es primo";
 	}
 	else

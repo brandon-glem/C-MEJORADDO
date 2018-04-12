@@ -95,8 +95,8 @@ int main()
 //    }
 //    else
 //        cout<< "es primo";
-	
-	
+
+
 //	//ejercicio 6
 //	int numero,primo, divisores=0,j=2;
 //	cout<<"ingrese numero: ";
@@ -115,38 +115,43 @@ int main()
 //		divisores=0;
 //	}
 
-	
+
 	//ejercicio 7
-//	int a,d,b=10000,res;
-//	cout<<"Ingrese un numero de 5 digitos: "<<endl;
-//	cin>>a;
-//	while(b>=0){
-//		d=a/b;
-//		cout<<d<<"  ";
-//		a=a%b;
-//		b=b/10;		
-//	}
-	
-	
+//int n,a,b,c,d,e;
+//cout<<"ingresar numero ( 5 digitos) :";
+//cin>>n;
+//if(n>=10000){
+//    if(n<=99999){
+//        a=n/10000;
+//        b=(n%10000)/1000;
+//        c=((n%10000)%1000)/100;
+//        d=(((n%10000)%1000)%100)/10;
+//        e=((((n%10000)%1000)%100)%10)/1;
+//        cout<<'\t'<<a<<'\t'<<b<<'\t'<<c<<'\t'<<d<<'\t'<<e;
+//    }
+//}
+
+
+
 	//ejercicio 8
 //	int n, numero, digitos, reverso = 0;
 //	cout << "ingrese un numero: ";
-//	cin >> numero;	
+//	cin >> numero;
 //	n = numero;
-//	
+//
 //	do
 //	{
 //		digitos = numero % 10;
 //		reverso = (reverso * 10) + digitos;
 //		numero = numero / 10;
-//	} while (numero != 0);	
-//	cout << " el numero alreves es : " << reverso << endl;	
+//	} while (numero != 0);
+//	cout << " el numero alreves es : " << reverso << endl;
 //	if (n == reverso)
 //		cout << " el numero es palindromo";
 //	else
 //		cout << " el numero no es palindromo";
-	
-		
+
+
     //ejercicio 9
 //    int anio;
 //    cout<<"ingrese un anio:";
@@ -158,8 +163,8 @@ int main()
 //            else
 //                cout<<"El anio " << anio << " ,no es Bisiesto";
 //    }
-	
-	
+
+
 	//ejercicio 10
 	int x=1 , y=1,z, cantidad,fibo=2;
 	cout << "ingrese un numero: ";

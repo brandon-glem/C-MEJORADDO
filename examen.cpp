@@ -3,16 +3,16 @@ using namespace std;
 
 bool esPerfecto(int x){
 	int suma=0;
-	
+
 	for(int i=1;i<x;i++){
 		if((x%i)==0){
 			suma+=i;
 		}
 	}
-	
+
 	if(suma==x)
 		return true;
-	
+
 	return false;
 }
 
@@ -40,9 +40,9 @@ void cambio(int &x,int &y){
 }
 
 void cambioBit(int &x,int &y){
-	a=a^b;
-	b=a^b;
-	a=a^b;
+	x=x^y;
+	y=x^y;
+	x=x^y;
 }
 
 int main() {
@@ -53,7 +53,7 @@ int main() {
 	else
 		cout<<x<<" no es un numero perfecto"<<endl;
 	cout<<'\n';
-	
+
 	//1.2
 	for(int j=5;j<=10000;j++){
 		if(esPerfecto(j)==true){
@@ -67,7 +67,7 @@ int main() {
 		}
 	}
 	cout<<'\n';
-	
+
 	//2.1
 	int y=9;
 	if(esPrimo(y)==true)
@@ -75,14 +75,14 @@ int main() {
 	else
 		cout<<y<<" no es un numero primo"<<endl;
 	cout<<'\n';
-	
+
 	//2.2
 	int n,contador=0,numeros=1;
 	cout<<"ingrese la cantidad de numeros primos: ";
 	cin>>n;
 	cout<<'\n';
 	cout<<"los "<<n<<" primeros numeros primos son; ";
-	
+
 	while(contador != n){
 		if(esPrimo(numeros)==true){
 			cout<<numeros<<",";
@@ -92,13 +92,13 @@ int main() {
 		++numeros;
 	}
 	cout<<'\n';
-	
+
 	//3
 	int base=2, exponente=3;
 	cout<<'\n';
 	cout<<base<<" elevado a "<<exponente<<" es: "<<potencia(base,exponente);
 	cout<<'\n';
-	
+
 	//4.1
 	cout<<'\n';
 	int n1=3,n2=2;
@@ -108,17 +108,17 @@ int main() {
 	cout<<"ahora es: "<<endl;
 	cout<<"x es "<<n1<<endl;
 	cout<<"y es "<<n2<<endl;
-	
+
 	//4.2
 	cout<<'\n';
 	int n3=3,n4=2;
-	cout<<"x es "<<n1<<endl;
-	cout<<"y es "<<n2<<endl;
+	cout<<"x es "<<n3<<endl;
+	cout<<"y es "<<n4<<endl;
 	cambioBit(n3,n4);
 	cout<<"ahora es: "<<endl;
-	cout<<"x es "<<n1<<endl;
-	cout<<"y es "<<n2<<endl;	
-	
+	cout<<"x es "<<n3<<endl;
+	cout<<"y es "<<n4<<endl;
+
 	return 0;
 }
 

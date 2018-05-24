@@ -2,3 +2,13 @@
 1527004466 source:c:\users\alumno-g\desktop\arreglo dinamico\main.cpp
 	<iostream>
 
+1527172584 source:f:\arreglo dinamico\main.cpp
+	<iostream>
+	"arreglo_dinamico.h"
+
+1527172544 source:f:\arreglo dinamico\src\arreglo_dinamico.cpp
+	"arreglo_dinamico.h"
+
+1527172120 f:\arreglo dinamico\include\arreglo_dinamico.h
+	<iostream>
+

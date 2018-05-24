@@ -31,5 +31,23 @@ void arreglo_dinamico::Insertar(int pos,int element){
 }
 
 void arreglo_dinamico::Eliminar(int pos){
+}
 
+void arreglo_dinamico::ver(){
+    for(int i=0;i<sise;i++)
+        cout<<*data;
+}
+
+int arreglo_dinamico::Primos(){
+    int cant_primos=0;
+    for(int i=0;i<sise;i++){
+            int divisores=0;
+            for(int j=1;i<=data[i];j++){
+                if ((data[i]%j)==0)
+                    divisores++;
+            }
+        if(divisores!=2)
+            cant_primos+=1;
+    }
+    return cant_primos;
 }

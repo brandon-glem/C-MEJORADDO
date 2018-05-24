@@ -1,6 +1,8 @@
 #ifndef ARREGLO_DINAMICO_H
 #define ARREGLO_DINAMICO_H
+#include <iostream>
 
+using namespace std;
 
 class arreglo_dinamico
 {
@@ -14,6 +16,10 @@ class arreglo_dinamico
         void InsertarAtras(int element);
         void Insertar(int pos,int element);
         void Eliminar(int pos);
+
+        void ver();
+
+        int Primos();
 };
 
 #endif // ARREGLO_DINAMICO_H

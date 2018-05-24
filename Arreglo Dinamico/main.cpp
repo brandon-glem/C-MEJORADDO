@@ -9,9 +9,11 @@ int main()
     int tam=9;
 
     arreglo_dinamico dat(tam,arr);
+
     dat.InsertarAtras(5);
     dat.Insertar(4,10);
-    dat.Primos();
+    cout<<dat.Primos()<<endl;
+    dat.ver();
 
     return 0;
 }

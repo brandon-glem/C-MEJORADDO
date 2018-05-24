@@ -10,8 +10,7 @@ arreglo_dinamico::arreglo_dinamico(int sise,int arr[]){
 
 void arreglo_dinamico::InsertarAtras(int element){
     int *nuevo = new int[++sise];
-    ++sise;
-    for(int i=0;i<sise;i++){
+    for(int i=0;i<sise-1;i++){
         nuevo[i]=data[i];
     }
     nuevo[sise-1]=element;
@@ -35,19 +34,19 @@ void arreglo_dinamico::Eliminar(int pos){
 
 void arreglo_dinamico::ver(){
     for(int i=0;i<sise;i++)
-        cout<<*data;
+        std::cout<<data[i]<<",";
 }
 
 int arreglo_dinamico::Primos(){
     int cant_primos=0;
     for(int i=0;i<sise;i++){
             int divisores=0;
-            for(int j=1;i<=data[i];j++){
+            for(int j=1;j<=data[i];j++){
                 if ((data[i]%j)==0)
                     divisores++;
             }
-        if(divisores!=2)
-            cant_primos+=1;
+            if(divisores==2)
+                cant_primos+=1;
     }
     return cant_primos;
 }

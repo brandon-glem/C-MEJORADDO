@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1528215572 source:c:\users\alumno-g\desktop\practica\empresa\main.cpp
+	<iostream>
+	"string.h"
+	"funcionario.h"
+	"empresa.h"
+
+1528215585 source:c:\users\alumno-g\desktop\practica\empresa\src\funcionario.cpp
+	"funcionario.h"
+	<iostream>
+	"string.h"
+
+1528215572 c:\users\alumno-g\desktop\practica\empresa\include\funcionario.h
+	<iostream>
+	"string.h"
+
+1528213447 source:c:\users\alumno-g\desktop\practica\empresa\src\empresa.cpp
+	"empresa.h"
+	<iostream>
+	"string.h"
+
+1528213447 c:\users\alumno-g\desktop\practica\empresa\include\empresa.h
+	<iostream>
+	"string.h"
+
+1528262852 source:h:\practica\empresa\main.cpp
+	<iostream>
+	"string.h"
+	"funcionario.h"
+	"empresa.h"
+
+1528256106 h:\practica\empresa\include\funcionario.h
+	<iostream>
+	"string.h"
+
+1528262814 h:\practica\empresa\include\empresa.h
+	<iostream>
+	"string.h"
+	"funcionario.h"
+
+1528262814 source:h:\practica\empresa\src\empresa.cpp
+	"empresa.h"
+	<iostream>
+	"string.h"
+	"funcionario.h"
+
+1528256122 source:h:\practica\empresa\src\funcionario.cpp
+	"funcionario.h"
+	<iostream>
+	"string.h"
+
